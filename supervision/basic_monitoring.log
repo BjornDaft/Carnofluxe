@@ -1,0 +1,16 @@
+
+ Log file: /var/log/basic_monitoring.log<br>
+
+● apache2.service - The Apache HTTP Server Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled) Active: active (running) since Wed 2017-12-20 09:23:11 CET; 17min ago
+Wed Dec 20 09:40:56 CET 2017
+<br><br>
+
+ Available disk space (root):<br>
+/dev/sda2        12G  3.8G  7.0G  35% /
+<br><br>
+
+Modified Apache2 files:<br>
+<br>
+
+New users: <br>
+<br><br>
