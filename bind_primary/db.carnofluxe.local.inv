@@ -1,0 +1,14 @@
+$TTL 86400
+@	IN	SOA	ns1.carnofluxe.local.	admin.carnofluxe.local.       (
+	2017121401	; serial number YYMMDDNN
+	28800	; Refresh
+	7200	; Retry
+	864000	; Expire
+	86400 ) ; Min TTL
+;
+@	IN	NS	ns1.carnofluxe.local.
+5	IN	PTR	ns1.carnofluxe.local.
+6	IN	PTR	ns2.carnofluxe.local.
+10	IN	PTR	www.carnofluxe.local.
+10	IN	PTR	supervision.carnofluxe.local.
+15	IN	PTR	qwe.carnofluxe.local.

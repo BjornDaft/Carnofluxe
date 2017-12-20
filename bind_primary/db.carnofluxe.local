@@ -1,0 +1,16 @@
+$TTL 604800
+@       IN      SOA     ns1.carnofluxe.local. admin.carnofluxe.local. (
+                        2017121411 ; Serial
+                        60 ; Refresh
+                        120 ; Retry
+                        300 ; Expire
+                        86400 ) ; Min TTL
+@	IN	NS	ns1.carnofluxe.local.
+@	IN	NS	ns2.carnofluxe.local.
+@	IN	NS	www.carnofluxe.local.
+@	IN	NS	supervision.carnofluxe.local.
+ns1	IN	A	192.168.10.5
+ns2	IN	A	192.168.10.6
+www	IN	A	192.168.10.10
+supervision	IN	A	192.168.10.10
+qwe	IN	A	192.168.10.15

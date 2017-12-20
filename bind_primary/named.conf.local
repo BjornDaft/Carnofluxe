@@ -1,0 +1,27 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+// Gérer les fichiers de logs
+include "/etc/bind/named.conf.log";
+
+// Gestion du domaine carnofluxe.local
+// ------------------------------
+//  - Le serveur est défini comme maître sur ce domaine
+
+zone "carnofluxe.local" {
+        type master;
+        file "/etc/bind/db.carnofluxe.local";
+	allow-transfer { 192.168.10.6; };
+};
+
+zone "10.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.carnofluxe.local.inv";
+	allow-transfer { 192.168.10.6; };
+
+};

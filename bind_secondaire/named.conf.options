@@ -1,0 +1,8 @@
+options {
+	allow-query{any;};
+	allow-recursion{localnets;};
+	allow-query-cache{localnets;};
+	allow-transfer{none;};
+	version none;		
+	allow-notify{192.168.10.5;}; // autorise notification du serveur primaire
+};
