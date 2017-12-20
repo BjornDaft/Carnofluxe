@@ -1,6 +1,6 @@
 #!/bin/bash
 exec 1>/dev/null
-exec 2>~/test.log
+exec 2>/root/Carnofluxe/scritps_results/errors.log
 dir=~/info.csv
 curlconf=~/curloutput.txt
 
@@ -18,11 +18,5 @@ else
         echo 'Temps de reponse du site,null' >>"$dir"
 fi
 
-scp $dir romain@192.168.10.10:~/info.csv
-
-#ssh-keygen -t rsa
-#ssh bjorn@192.168.43.174 mkdir -p .ssh
-#cat .ssh/id_rsa.pub | ssh bjorn@192.168.43.174 'cat >> .ssh/authorized_keys'
-#ssh bjorn@192.168.43.174 "chmod 700 .ssh; chmod 640 .ssh/authorized_keys"
-#ssh-add
+scp $dir debian@192.168.10.10:~/info.csv
 

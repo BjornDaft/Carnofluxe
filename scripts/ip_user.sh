@@ -1,10 +1,10 @@
 #!/bin/bash
 exec 1>/dev/null
-exec 2>/home/romain/test.log
+exec 2>/root/Carnofluxe/scritps_results/errors.log
 DATE=`date "+%s"`
 DATElasthour=$((DATE - 3600))
-dir=/home/romain/last_connexions.csv
-dir2=/home/romain/last_connexions2.csv
+dir=/root/Carnofluxe/scritps_results/last_connexions.csv
+dir2=/root/Carnofluxe/scritps_results/last_connexions2.csv
 conf=/etc/apache2/apache2.conf
 
 sed -i 's/%t/%{sec}t/g' $conf 
