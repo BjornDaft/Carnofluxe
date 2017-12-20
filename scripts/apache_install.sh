@@ -53,7 +53,7 @@ mkdir /var/www/carnofluxe/ && echo "<html>
 
 ln -s /root/Carnofluxe/scripts_results/last_connexions.csv /var/www/supervision/ip.csv
 ln -s /root/Carnofluxe/scripts_results/info.csv /var/www/supervision/data.csv
-
+ln -s /root/Carnofluxe/scripts_results/basic_monitoring.log /var/www/supervision/basic_monitoring.log
 
 
 a2ensite carnofluxe.fr.conf
