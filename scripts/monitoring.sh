@@ -18,5 +18,5 @@ else
         echo 'Temps de reponse du site,null' >>"$dir"
 fi
 
-scp $dir debian@192.168.10.10:~/info.csv
+scp $dir debian@192.168.10.10:~/var/www/supervision/data.csv
 
