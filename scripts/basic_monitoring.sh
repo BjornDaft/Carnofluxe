@@ -1,6 +1,7 @@
 #!/bin/bash
 
 exec 1>/root/Carnofluxe/scripts_results/basic_monitoring.log
+exec 2>>/root/Carnofluxe/scripts_results/errors.log
 
 echo -e '\n Log file: /root/Carnofluxe/scripts_results/basic_monitoring.log<br>\n'
 

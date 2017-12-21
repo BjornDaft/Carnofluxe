@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exec 2>>/root/Carnofluxe/scripts_results/errors.log
+
 hostname="HTTP-carnofluxe"
 
 rm /etc/apache2/sites-enabled/*
